@@ -349,10 +349,10 @@ class PDFObject
                             }
                         }
                         if ($current_position_tm['y'] !== false) {
-                            $delta = abs(floatval($y) - floatval($current_position_tm['y']));
-                            if ($delta > 10) {
+                            //$delta = abs(floatval($y) - floatval($current_position_tm['y']));
+                            //if ($delta > -1) {
                                 $text .= "\n";
-                            }
+                            //}
                         }
                         $current_position_tm = array('x' => $x, 'y' => $y);
                         break;
